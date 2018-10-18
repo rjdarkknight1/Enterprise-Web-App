@@ -1,0 +1,129 @@
+package application;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+
+public class Controllers {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private CheckBox printtofilebtn;
+
+    @FXML
+    private ToggleGroup print_area;
+
+    @FXML
+    private RadioButton allBtn;
+
+    @FXML
+    private CheckBox imagebtn;
+
+    @FXML
+    private CheckBox textbtn;
+
+    @FXML
+    private ChoiceBox<?> printerquality;
+
+    @FXML
+    private RadioButton selectionbtn;
+
+    @FXML
+    private CheckBox codebtn;
+
+    @FXML
+    private RadioButton appletbtn;
+
+    @FXML
+    void imageselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void textselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void codeselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize(ActionEvent event) {
+
+    }
+
+    @FXML
+    void printtofileselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void selectionselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void allselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void appletselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void okayselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void cancelselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void setupselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void helpselected(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize() {
+        assert printtofilebtn != null : "fx:id=\"printtofilebtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert print_area != null : "fx:id=\"print_area\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert allBtn != null : "fx:id=\"allBtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert imagebtn != null : "fx:id=\"imagebtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert textbtn != null : "fx:id=\"textbtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert printerquality != null : "fx:id=\"printerquality\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert selectionbtn != null : "fx:id=\"selectionbtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert codebtn != null : "fx:id=\"codebtn\" was not injected: check your FXML file 'Printer.fxml'.";
+        assert appletbtn != null : "fx:id=\"appletbtn\" was not injected: check your FXML file 'Printer.fxml'.";
+
+    }
+}
