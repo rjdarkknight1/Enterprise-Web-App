@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loanCalculator.Controller">
+   <children>
+      <AnchorPane layoutX="-216.0" layoutY="-200.0" prefHeight="718.0" prefWidth="944.0">
+         <children>
+            <Label layoutX="302.0" layoutY="260.0" prefHeight="18.0" prefWidth="195.0" text="Enter Mortgage Information" />
+            <Label layoutX="295.0" layoutY="305.0" text="Loan Amount $" />
+            <TextField fx:id="loanamount" layoutX="380.0" layoutY="300.0" onAction="#calculatemtg" prefHeight="26.0" prefWidth="94.0" />
+            <Label layoutX="486.0" layoutY="305.0" text="Interest Rate" />
+            <ChoiceBox fx:id="interestrate" layoutX="556.0" layoutY="300.0" onDragDetected="#initialize" onDragDone="#initialize" onDragDropped="#initialize" prefHeight="28.0" prefWidth="86.0" />
+            <Label layoutX="656.0" layoutY="305.0" prefHeight="18.0" prefWidth="134.0" text="Mortage Term(Years)" />
+            <ChoiceBox fx:id="mortgageterm" layoutX="771.0" layoutY="300.0" onDragDetected="#initialize" onDragDone="#initialize" onDragDropped="#initialize" prefHeight="28.0" prefWidth="76.0" />
+            <Button fx:id="calculatebtn" layoutX="873.0" layoutY="302.0" mnemonicParsing="false" onAction="#calculatemtg" prefHeight="25.0" prefWidth="101.0" text="Calculate" />
+            <TableView fx:id="mortgageV" editable="true" layoutX="295.0" layoutY="336.0" prefHeight="351.0" prefWidth="670.0">
+               <columns>
+                  <TableColumn fx:id="month" prefWidth="105.0" text="Month Number" />
+                  <TableColumn fx:id="payment" prefWidth="105.0" text="Payment" />
+                  <TableColumn fx:id="principlepaid" prefWidth="105.0" text="Principle Paid" />
+                  <TableColumn fx:id="interestpaid" prefWidth="110.0" text="Interest Paid" />
+                  <TableColumn fx:id="totalinterestpaid" prefWidth="110.0" text="Total Interest Paid" />
+                  <TableColumn fx:id="remainingvalue" prefWidth="140.0" text="Remaining Value" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Label layoutX="673.0" layoutY="698.0" prefHeight="32.0" prefWidth="101.0" text="Total Payment $" />
+            <TextField fx:id="totalpayment" layoutX="774.0" layoutY="701.0" onAction="#totalpaymentamt" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
